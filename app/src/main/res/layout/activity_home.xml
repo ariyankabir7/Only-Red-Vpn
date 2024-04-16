@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:context=".HomeActivity">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/app_color"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:src="@drawable/menu"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_45sdp"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/gff_medium"
+                android:layout_marginStart="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:text="Only Red VPN"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/nativeads"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="@dimen/_2sdp">
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/des"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/desing"
+                    android:layout_marginHorizontal="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/nativeads"
+                    app:layout_constraintBottom_toTopOf="@+id/evo" />
+
+
+                <ImageView
+                    android:id="@+id/evo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/evo"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/des" />
+
+                <ImageView
+                    android:id="@+id/flying"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/flying"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/evo" />
+
+                <ImageView
+                    android:id="@+id/gfx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/gfx"
+                    app:layout_constraintTop_toBottomOf="@id/flying" />
+                <ImageView
+                    android:id="@+id/onetap"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/onetap"
+                    app:layout_constraintTop_toBottomOf="@id/gfx" />
+                <ImageView
+                    android:id="@+id/yt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/youtube"
+                    app:layout_constraintTop_toBottomOf="@id/onetap" />
+                <ImageView
+                    android:id="@+id/lagg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/lagg"
+                    app:layout_constraintTop_toBottomOf="@id/yt" />
+                <ImageView
+                    android:id="@+id/gloo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/gloo"
+                    app:layout_constraintTop_toBottomOf="@id/lagg" />
+                <ImageView
+                    android:id="@+id/advance"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/advance"
+                    app:layout_constraintTop_toBottomOf="@id/gloo" />
+                <ImageView
+                    android:id="@+id/rateus"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/rate"
+                    app:layout_constraintTop_toBottomOf="@id/advance" />
+                <ImageView
+                    android:id="@+id/shareus"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:src="@drawable/share"
+                    app:layout_constraintTop_toBottomOf="@id/rateus" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>
+

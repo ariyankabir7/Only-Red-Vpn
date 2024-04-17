@@ -13,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.onlyredvpn.databinding.ActivityLaggBinding
@@ -132,38 +133,21 @@ class LaggActivity : AppCompatActivity() {
                 //finish()
                 if (g == "Normal Phone") {
                     val customLayout = LayoutInflater.from(this)
-                        .inflate(R.layout.worst_popup, null)
-
-                    // Create AlertDialog with custom layout
-                    val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
-                    builder.setView(customLayout)
-                    builder.setCancelable(true) // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val popupDialog = builder.create()
-                    popupDialog.show()
-                    // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
-
-                    okaybtn.setOnClickListener {
-                        popupDialog.dismiss()
-                    }
-                } else if (r == "2 GB") {
-                    val customLayout = LayoutInflater.from(this)
                         .inflate(R.layout.bad_popup, null)
 
                     // Create AlertDialog with custom layout
                     val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
                     builder.setView(customLayout)
                     builder.setCancelable(true) // Prevent dismissing AlertDialog by tapping outside or pressing back button
-
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
                     }
-                } else if (f == "Normal") {
+                } else if (r == "2 GB") {
                     val customLayout = LayoutInflater.from(this)
                         .inflate(R.layout.good_popup, null)
 
@@ -175,14 +159,14 @@ class LaggActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
                     }
-                } else {
+                } else if (f == "Normal") {
                     val customLayout = LayoutInflater.from(this)
-                        .inflate(R.layout.best_popup, null)
+                        .inflate(R.layout.nice_popup, null)
 
                     // Create AlertDialog with custom layout
                     val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
@@ -192,7 +176,24 @@ class LaggActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+
+                    okaybtn.setOnClickListener {
+                        popupDialog.dismiss()
+                    }
+                } else {
+                    val customLayout = LayoutInflater.from(this)
+                        .inflate(R.layout.awesome_popup, null)
+
+                    // Create AlertDialog with custom layout
+                    val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
+                    builder.setView(customLayout)
+                    builder.setCancelable(true) // Prevent dismissing AlertDialog by tapping outside or pressing back button
+
+                    val popupDialog = builder.create()
+                    popupDialog.show()
+                    // Prevent dismissing AlertDialog by tapping outside or pressing back button
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()

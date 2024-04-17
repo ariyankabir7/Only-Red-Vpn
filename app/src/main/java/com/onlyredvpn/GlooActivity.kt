@@ -94,7 +94,7 @@ class GlooActivity : AppCompatActivity() {
                 //finish()
                 if (g <=60) {
                     val customLayout = LayoutInflater.from(this)
-                        .inflate(R.layout.bad_popup, null)
+                        .inflate(R.layout.worst_popup, null)
 
                     // Create AlertDialog with custom layout
                     val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)

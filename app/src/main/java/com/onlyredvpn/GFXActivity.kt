@@ -186,7 +186,7 @@ class GFXActivity : AppCompatActivity() {
                 //finish()
                 if (g == "Smooth") {
                     val customLayout = LayoutInflater.from(this@GFXActivity)
-                        .inflate(R.layout.bad_popup, null)
+                        .inflate(R.layout.worst_popup, null)
                     // Create AlertDialog with custom layout
                     val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
                     builder.setView(customLayout)
@@ -220,7 +220,7 @@ class GFXActivity : AppCompatActivity() {
 
                 } else if (f == "30FPS") {
                     val customLayout = LayoutInflater.from(this@GFXActivity)
-                        .inflate(R.layout.bad_popup, null)
+                        .inflate(R.layout.good_popup, null)
 
                     // Create AlertDialog with custom layout
                     val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
@@ -235,7 +235,7 @@ class GFXActivity : AppCompatActivity() {
                     }
                 } else if (turbo == "") {
                     val customLayout = LayoutInflater.from(this@GFXActivity)
-                        .inflate(R.layout.good_popup, null)
+                        .inflate(R.layout.awesome_popup, null)
 
                     val okaybtn4 = findViewById<LinearLayout>(R.id.okbtn)
 

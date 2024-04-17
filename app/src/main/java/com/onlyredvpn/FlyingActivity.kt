@@ -127,7 +127,7 @@ class FlyingActivity : AppCompatActivity() {
                 alertDialog.dismiss()
 
                 if (!binding.switchButton.isChecked) {
-                    val customLayout = LayoutInflater.from(this).inflate(R.layout.bad_popup, null)
+                    val customLayout = LayoutInflater.from(this).inflate(R.layout.worst_popup, null)
 
                     // Create AlertDialog with custom layout
                     val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
@@ -144,7 +144,7 @@ class FlyingActivity : AppCompatActivity() {
                 } else if (!binding.switch2.isChecked) {
 
                     val customLayout = LayoutInflater.from(this)
-                        .inflate(R.layout.bad_popup, null)
+                        .inflate(R.layout.worst_popup, null)
 
                     // Create AlertDialog with custom layout
                     val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
@@ -194,7 +194,7 @@ class FlyingActivity : AppCompatActivity() {
 
                 } else if (!binding.switch5.isChecked) {
                     val customLayout = LayoutInflater.from(this)
-                        .inflate(R.layout.good_popup, null)
+                        .inflate(R.layout.awesome_popup, null)
 
                     // Create AlertDialog with custom layout
                     val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)

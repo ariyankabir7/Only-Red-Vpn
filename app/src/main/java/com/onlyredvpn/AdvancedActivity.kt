@@ -62,6 +62,7 @@ class AdvancedActivity : AppCompatActivity() {
                         override fun onAdDismissedFullScreenContent() {
 
                             binding.detaisCard.visibility = View.VISIBLE
+                            binding.okaybtn.visibility = View.VISIBLE
 
                         }
                     }
@@ -70,10 +71,15 @@ class AdvancedActivity : AppCompatActivity() {
             } else {
                // Toast.makeText(this, "Please Wait For Ads Load !", Toast.LENGTH_SHORT).show()
                 binding.detaisCard.visibility = View.VISIBLE
+                binding.okaybtn.visibility = View.VISIBLE
             }
         }
 
         binding.back.setOnClickListener { finish() }
+
+        binding.okaybtn.setOnClickListener {
+            finish()
+        }
     }
     private fun loadInterstialads() {
         var adRequest = AdManagerAdRequest.Builder().build()

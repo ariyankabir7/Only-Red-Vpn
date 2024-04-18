@@ -105,7 +105,7 @@ class GlooActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }
@@ -121,7 +121,7 @@ class GlooActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }
@@ -137,7 +137,7 @@ class GlooActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }
@@ -153,7 +153,7 @@ class GlooActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }

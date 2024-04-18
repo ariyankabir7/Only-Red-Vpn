@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.os.Bundle
 import android.os.Handler
 import android.view.LayoutInflater
+import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.Switch
 import android.widget.TextView
@@ -108,7 +109,7 @@ class EvoActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -126,7 +127,7 @@ class EvoActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -144,7 +145,7 @@ class EvoActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -161,7 +162,7 @@ class EvoActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -178,7 +179,7 @@ class EvoActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -195,7 +196,7 @@ class EvoActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -211,7 +212,7 @@ class EvoActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()

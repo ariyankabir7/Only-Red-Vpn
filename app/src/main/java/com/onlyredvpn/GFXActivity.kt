@@ -196,7 +196,7 @@ class GFXActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -213,7 +213,7 @@ class GFXActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -230,7 +230,7 @@ class GFXActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }
@@ -248,7 +248,7 @@ class GFXActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }
@@ -263,7 +263,7 @@ class GFXActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }

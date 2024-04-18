@@ -142,7 +142,7 @@ class LaggActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -159,7 +159,7 @@ class LaggActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -176,7 +176,7 @@ class LaggActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -193,7 +193,7 @@ class LaggActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()

@@ -57,7 +57,7 @@
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/nativeads"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_150sdp"
+                    android:layout_height="@dimen/_160sdp"
                     android:layout_marginHorizontal="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_16sdp"
                     app:cardBackgroundColor="@color/white"
@@ -66,7 +66,12 @@
                     app:strokeColor="@color/white"
                     app:strokeWidth="@dimen/_2sdp">
 
-
+                    <ImageView
+                        android:id="@+id/bannerAd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/text" />
                 </com.google.android.material.card.MaterialCardView>
 
                 <ImageView
@@ -100,8 +105,6 @@
                     android:src="@drawable/flying"
                     app:layout_constraintTop_toBottomOf="@+id/evo" />
 
-
-
                 <ImageView
                     android:id="@+id/gfx"
                     android:layout_width="match_parent"
@@ -123,6 +126,16 @@
                     app:layout_constraintTop_toBottomOf="@id/gfx" />
 
                 <ImageView
+                    android:id="@+id/rateus"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rate"
+                    app:layout_constraintTop_toBottomOf="@id/onetap" />
+
+                <ImageView
                     android:id="@+id/yt"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_80sdp"
@@ -130,7 +143,7 @@
                     android:layout_marginTop="@dimen/_9sdp"
                     android:scaleType="fitXY"
                     android:src="@drawable/youtube"
-                    app:layout_constraintTop_toBottomOf="@id/onetap" />
+                    app:layout_constraintTop_toBottomOf="@id/rateus" />
 
                 <ImageView
                     android:id="@+id/lagg"
@@ -163,23 +176,13 @@
                     app:layout_constraintTop_toBottomOf="@id/gloo" />
 
                 <LinearLayout
+                    android:id="@+id/row1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintTop_toBottomOf="@id/advance">
 
-                    <ImageView
-                        android:id="@+id/rateus"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_40sdp"
 
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:layout_weight="1"
-                        android:src="@drawable/rate" />
-                    <Space
-                        android:layout_width="@dimen/_10sdp"
-                        android:layout_height="wrap_content" />
                     <ImageView
                         android:id="@+id/shareus"
                         android:layout_width="match_parent"
@@ -188,10 +191,14 @@
 
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:layout_weight="1"
-                        android:src="@drawable/share"
-                        app:layout_constraintTop_toBottomOf="@id/rateus" />
+                        android:src="@drawable/share" />
                 </LinearLayout>
 
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/row1" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </ScrollView>

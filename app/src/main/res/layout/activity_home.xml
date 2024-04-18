@@ -53,13 +53,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/nativeads"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_160sdp"
                     android:layout_marginHorizontal="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_16sdp"
+                    android:visibility="gone"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="@dimen/_10sdp"
                     app:layout_constraintTop_toTopOf="parent"

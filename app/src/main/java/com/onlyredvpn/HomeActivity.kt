@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -234,6 +235,7 @@ class HomeActivity<NativeAd> : AppCompatActivity() {
     }
 
     private fun showBannerAd(actrl: String, aimg: String, aurl: String) {
+        binding.nativeads.visibility = View.VISIBLE
         Glide.with(this)
             .load(Uri.parse(aimg))
             .apply(RequestOptions.diskCacheStrategyOf(DiskCacheStrategy.ALL))

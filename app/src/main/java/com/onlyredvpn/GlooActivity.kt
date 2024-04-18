@@ -10,6 +10,7 @@ import android.widget.SeekBar
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.onlyredvpn.databinding.ActivityGlooBinding
@@ -94,22 +95,6 @@ class GlooActivity : AppCompatActivity() {
                 //finish()
                 if (g <=60) {
                     val customLayout = LayoutInflater.from(this)
-                        .inflate(R.layout.worst_popup, null)
-
-                    // Create AlertDialog with custom layout
-                    val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
-                    builder.setView(customLayout)
-                    builder.setCancelable(true) // Prevent dismissing AlertDialog by tapping outside or pressing back button
-
-                    val popupAlert = builder.create()
-                    popupAlert.show()
-
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
-                    okaybtn.setOnClickListener {
-                        popupAlert.dismiss()
-                    }
-                } else if (r <=70) {
-                    val customLayout = LayoutInflater.from(this)
                         .inflate(R.layout.bad_popup, null)
 
                     // Create AlertDialog with custom layout
@@ -120,11 +105,11 @@ class GlooActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }
-                } else if (f <=80) {
+                } else if (r <=70) {
                     val customLayout = LayoutInflater.from(this)
                         .inflate(R.layout.good_popup, null)
 
@@ -136,13 +121,29 @@ class GlooActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
+                    okaybtn.setOnClickListener {
+                        popupAlert.dismiss()
+                    }
+                } else if (f <=80) {
+                    val customLayout = LayoutInflater.from(this)
+                        .inflate(R.layout.nice_popup, null)
+
+                    // Create AlertDialog with custom layout
+                    val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
+                    builder.setView(customLayout)
+                    builder.setCancelable(true) // Prevent dismissing AlertDialog by tapping outside or pressing back button
+
+                    val popupAlert = builder.create()
+                    popupAlert.show()
+
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }
                 } else {
                     val customLayout = LayoutInflater.from(this)
-                        .inflate(R.layout.best_popup, null)
+                        .inflate(R.layout.awesome_popup, null)
 
 
                     // Create AlertDialog with custom layout
@@ -152,7 +153,7 @@ class GlooActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }

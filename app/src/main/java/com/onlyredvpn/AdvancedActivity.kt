@@ -54,7 +54,6 @@ class AdvancedActivity : AppCompatActivity() {
         binding.detaisCard.visibility = View.GONE
 
         binding.revealInfo.setOnClickListener {
-
             if (mAdManagerInterstitialAd != null) {
                 // Show the interstitial ad
                 mAdManagerInterstitialAd?.fullScreenContentCallback =
@@ -90,12 +89,11 @@ class AdvancedActivity : AppCompatActivity() {
             adRequest,
             object : AdManagerInterstitialAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {
-                    adError?.toString()?.let { Log.d(ContentValues.TAG, it) }
+                    adError.toString().let { Log.d(ContentValues.TAG, it) }
                     mAdManagerInterstitialAd = null
                 }
 
                 override fun onAdLoaded(interstitialAd: AdManagerInterstitialAd) {
-                    Log.d(ContentValues.TAG, "Ad was loaded.")
                     mAdManagerInterstitialAd = interstitialAd
                 }
             })

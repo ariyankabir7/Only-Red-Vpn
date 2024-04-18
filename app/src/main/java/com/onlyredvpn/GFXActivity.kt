@@ -14,6 +14,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.onlyredvpn.databinding.ActivityGfxactivityBinding
@@ -195,7 +196,7 @@ class GFXActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -212,7 +213,7 @@ class GFXActivity : AppCompatActivity() {
                     val popupDialog = builder.create()
                     popupDialog.show()
                     // Prevent dismissing AlertDialog by tapping outside or pressing back button
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
 
                     okaybtn.setOnClickListener {
                         popupDialog.dismiss()
@@ -229,13 +230,13 @@ class GFXActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }
                 } else if (turbo == "") {
                     val customLayout = LayoutInflater.from(this@GFXActivity)
-                        .inflate(R.layout.awesome_popup, null)
+                        .inflate(R.layout.best_popup, null)
 
                     val okaybtn4 = findViewById<LinearLayout>(R.id.okbtn)
 
@@ -247,13 +248,13 @@ class GFXActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }
                 } else {
                     val customLayout =
-                        LayoutInflater.from(this@GFXActivity).inflate(R.layout.best_popup, null)
+                        LayoutInflater.from(this@GFXActivity).inflate(R.layout.awesome_popup, null)
 
                     // Create AlertDialog with custom layout
                     val builder = AlertDialog.Builder(this,R.style.TransparentDialogTheme)
@@ -262,7 +263,7 @@ class GFXActivity : AppCompatActivity() {
                     val popupAlert = builder.create()
                     popupAlert.show()
 
-                    val okaybtn = customLayout.findViewById<LinearLayout>(R.id.okbtn)
+                    val okaybtn = customLayout.findViewById<ConstraintLayout>(R.id.okbtn)
                     okaybtn.setOnClickListener {
                         popupAlert.dismiss()
                     }

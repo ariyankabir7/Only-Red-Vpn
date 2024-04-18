@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#00FFFFFF"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView"
         android:layout_width="@dimen/_210sdp"
@@ -43,7 +41,7 @@
                 android:text="Awesome Settings"
                 android:textStyle="bold"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:textColor="#AF0640"
+                android:textColor="#DA0F00"
                 android:textSize="18sp" />
 
             <LinearLayout
@@ -70,9 +68,6 @@
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
